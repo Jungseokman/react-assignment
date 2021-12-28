@@ -41,7 +41,7 @@ class Assignment extends React.Component {
 
     render(){
         return (
-            <div style={{width:"100%", display: "flex", flexDirection:"column", alignItems: "center", textAlign: "center", color:"#999"}}>
+            <div style={{width:"100%", height:"100vh", display: "flex", flexDirection:"column", alignItems: "center", textAlign: "center", color:"#999"}}>
                 <div style={{display: "flex", padding:50}}>
                     <div style={{marginRight: 200}}>
                         <div style={{width: 300, height: 300, backgroundColor: this.state.color, borderRadius:150}}></div>
