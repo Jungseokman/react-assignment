@@ -41,19 +41,19 @@ class Assignment extends React.Component {
 
     render(){
         return (
-            <div style={{width:"100%", height:"100vh", display: "flex", flexDirection:"column", alignItems: "center", textAlign: "center", color:"#999"}}>
-                <div style={{display: "flex", padding:50}}>
-                    <div style={{marginRight: 200}}>
-                        <div style={{width: 300, height: 300, backgroundColor: this.state.color, borderRadius:150}}></div>
+            <div style={{width:"100%", height:"100vh", display: "flex", flexDirection:"column", alignItems: "center", textAlign: "center", color:"#999", fontSize:10}}>
+                <div style={{display: "flex", padding:20}}>
+                    <div style={{marginRight: 50}}>
+                        <div style={{width: 100, height: 100, backgroundColor: this.state.color, borderRadius:50}}></div>
                         <p>8가지색 순서대로 3초</p>
                     </div>
                     <div>
-                        <div style={{width: 300, height: 300, backgroundColor: `rgb(${this.state.randomColorX}, ${this.state.randomColorY}, ${this.state.randomColorZ})`, borderRadius: 150}}></div>
+                        <div style={{width: 100, height: 100, backgroundColor: `rgb(${this.state.randomColorX}, ${this.state.randomColorY}, ${this.state.randomColorZ})`, borderRadius: 50}}></div>
                         <p>랜덤의 색 1.5초</p>
                     </div>
                 </div>
                 <div>
-                    <img src={process.env.PUBLIC_URL + `/img/${this.state.imgNumber}.jpeg`} style={{width:600, height:300}}/>
+                    <img src={process.env.PUBLIC_URL + `/img/${this.state.imgNumber}.jpeg`} style={{width:200, height:100}}/>
                     <p>10개사진 랜덤 3초</p>
                 </div>
             </div>
